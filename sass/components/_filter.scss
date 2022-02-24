@@ -1,0 +1,59 @@
+.portfolio-filter {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.portfolio-filter__item + .portfolio-filter__item {
+  margin-left: 8px;
+}
+
+.portfolio-filter__link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  cursor: pointer;
+
+  background-color: var(--bgc-team-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border: none;
+  border-radius: 4px;
+
+  transition-property: box-shadow, color, background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-light-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  &.current {
+    color: var(--primary-light-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.portfolio-filter__item:hover,
+.portfolio-filter__item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}

@@ -1,0 +1,113 @@
+.nav,
+.header-contacts,
+.list,
+.contacts__list,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+nav,
+.nav {
+  display: flex;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav__nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
+
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &.current {
+    color: var(--accent-color);
+  }
+}
+
+.nav__nav-link.current::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: -1px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-icon.mail {
+  margin-bottom: 0;
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header-icon.tel {
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header-icon:focus,
+.header-icon:hover {
+  fill: var(--accent-color);
+}
+
+.header-contacts__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--paragraph-text-color);
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

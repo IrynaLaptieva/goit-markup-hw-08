@@ -1,0 +1,28 @@
+.soc-team__item + .soc-team__item {
+  margin-left: 10px;
+}
+
+.soc-team__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--primary-light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+
+  transition-property: color, background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-light-color);
+  }
+}
+
+.soc-team__icon {
+  fill: currentColor;
+}
