@@ -763,7 +763,7 @@ nav,
 }
 
 .modal {
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background-color: var(--primary-light-color);
   border-radius: 4px;
@@ -774,6 +774,18 @@ nav,
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 500ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close-btn {
@@ -803,11 +815,17 @@ nav,
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-input-wrap {
@@ -894,13 +912,20 @@ textarea {
 }
 
 .modal-check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-check-text span {
