@@ -1,15 +1,23 @@
 .portfolio-filter {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio-filter__item + .portfolio-filter__item {
   margin-left: 8px;
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 .portfolio-filter__link {

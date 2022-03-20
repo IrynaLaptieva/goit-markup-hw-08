@@ -178,8 +178,15 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -964,16 +971,30 @@ textarea {
 
 .portfolio-filter {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    justify-content: center;
+  }
 }
 
 .portfolio-filter__item + .portfolio-filter__item {
   margin-left: 8px;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter__item + .portfolio-filter__item {
+    padding-bottom: 0;
+  }
 }
 
 .portfolio-filter__link {
@@ -1062,11 +1083,16 @@ textarea {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-item {
@@ -1089,10 +1115,22 @@ textarea {
 }
 
 .portfolio-list__element {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--primary-light-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__element {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__element {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
 }
 
 .portfolio-list__element:hover, .portfolio-list__element:focus {
@@ -1115,11 +1153,27 @@ textarea {
   transform: translateY(0);
 }
 
-.portfolio-list__element:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__element:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
-.portfolio-list__element:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__element:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__element:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__element:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
