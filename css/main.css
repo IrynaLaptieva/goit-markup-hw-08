@@ -341,22 +341,36 @@ nav,
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero-title {
   color: var(--primary-light-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 360px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .linear {
