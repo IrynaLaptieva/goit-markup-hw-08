@@ -7,6 +7,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @include desk {
+    flex-wrap: nowrap;
+  }
   // display: flex;
   // justify-content: center;
   // padding-left: 0;

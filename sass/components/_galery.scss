@@ -67,6 +67,7 @@
 }
 
 .portfolio-container {
+  flex-grow: 1;
   box-sizing: border-box;
   padding-top: 20px;
   padding-right: 24px;
@@ -100,7 +101,9 @@
 }
 
 .portfolio-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition-property: box-shadow;
   transition-duration: var(--duration);
