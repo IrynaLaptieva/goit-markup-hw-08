@@ -257,6 +257,12 @@ nav {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -311,6 +317,12 @@ nav {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: flex;
+  }
+}
+
 .header-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -350,20 +362,96 @@ nav {
   color: var(--accent-color);
 }
 
-.menu-open-btn {
+.menu-open-btn,
+.menu-close-btn {
   display: block;
   margin-left: auto;
   border: none;
   background-color: #ffffff;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus,
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
 .mob-menu {
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+  padding-top: 10px;
+  padding-bottom: 48px;
+}
+
+.mob-menu .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu-list__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mob-menu-list__nav-link:hover, .mob-menu-list__nav-link:focus {
+  color: var(--accent-color);
+}
+
+.mob-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mob-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-contacts__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
+}
+
+.mob-menu-list__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-soc-list {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.mob-soc-list__item {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.mob-soc-list__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc-list__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .hero {
