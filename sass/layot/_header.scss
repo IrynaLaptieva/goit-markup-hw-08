@@ -11,7 +11,6 @@ nav {
   display: flex;
 }
 .nav {
-  // display: flex;
   display: none;
 
   @include tab {
@@ -77,12 +76,21 @@ nav {
   justify-content: center;
 
   @include tab {
+    display: block;
+  }
+
+  @include desk {
     display: flex;
   }
 }
 
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  padding-bottom: 10px;
+
+  @include desk {
+    padding-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .header-icon.mail {
@@ -105,17 +113,25 @@ nav {
 
 .header-contacts__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: var(--paragraph-text-color);
   font-weight: 500;
-  line-height: 1.43;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing);
+
+  @include desk {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 
   &:hover,
   &:focus {
@@ -135,11 +151,16 @@ nav {
     fill: var(--accent-color);
     cursor: pointer;
   }
+
+  @include tab {
+    display: none;
+  }
 }
 
 .mob-menu {
   position: fixed;
   background-color: #ffffff;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   top: 0;
