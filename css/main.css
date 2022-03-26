@@ -861,6 +861,13 @@ nav {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tab {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts {
   text-align: center;
   margin-bottom: 60px;
@@ -876,6 +883,14 @@ nav {
 
 .footer-icon {
   text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-icon {
+    width: 206px;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
