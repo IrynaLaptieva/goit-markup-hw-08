@@ -48,7 +48,11 @@
 .footer-tab {
   @include tab {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  @include desk {
+    align-items: baseline;
   }
 }
 
@@ -130,15 +134,26 @@
 }
 
 .online {
-  display: flex;
-  flex-wrap: wrap;
-  width: 570px;
-  padding: 0;
-  margin-left: 93px;
+  margin-top: 60px;
+  text-align: center;
+
+  @include tab {
+    margin-top: 0;
+  }
+
+  @include desk {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+    margin-left: 93px;
+    padding: 0;
+  }
 }
 
 .online-form {
-  display: flex;
+  @include desk {
+    display: flex;
+  }
 }
 
 .online__title {
@@ -151,7 +166,7 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
-  margin-top: 60px;
+  // margin-top: 60px;
 
   @include desk {
     margin-top: 0;
@@ -163,6 +178,7 @@
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -182,6 +198,10 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+
+  @include desk {
+    margin-bottom: 0;
   }
 }
 

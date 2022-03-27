@@ -50,6 +50,11 @@
   padding-bottom: 10px;
   padding-left: 29px;
   width: 200px;
+
+  @include tab {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 // --modal--
