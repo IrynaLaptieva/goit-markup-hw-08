@@ -46,19 +46,27 @@
 }
 
 .footer-tab {
+  margin-bottom: 60px;
+
   @include tab {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @include desk {
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
 .contacts {
   text-align: center;
   margin-bottom: 60px;
+
+  @include tab {
+    margin-bottom: 0;
+  }
 
   @include desk {
     min-width: 231px;
@@ -101,6 +109,8 @@
 .footer-icon__list {
   display: flex;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @include desk {
     display: flex;
@@ -134,13 +144,7 @@
 }
 
 .online {
-  margin-top: 60px;
   text-align: center;
-
-  @include tab {
-    margin-top: 0;
-  }
-
   @include desk {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +170,6 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
-  // margin-top: 60px;
 
   @include desk {
     margin-top: 0;
@@ -174,7 +177,7 @@
 }
 
 .online-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -198,6 +201,10 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+
+  @include tel {
+    width: 358px;
   }
 
   @include desk {
