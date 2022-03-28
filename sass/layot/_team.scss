@@ -3,7 +3,6 @@
 }
 
 .team-list {
-  margin-bottom: -15px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +22,6 @@
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
-    margin-bottom: 15px;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
