@@ -1513,12 +1513,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-list__element:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .portfolio-list__element:nth-child(3n) {
     margin-right: 0;
