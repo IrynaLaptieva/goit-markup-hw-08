@@ -114,8 +114,6 @@ nav {
 
 .header-contacts__link {
   display: block;
-  padding-top: 21px;
-  // padding-bottom: 32px;
 
   color: var(--paragraph-text-color);
   font-weight: 500;
@@ -137,6 +135,18 @@ nav {
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.mailto {
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+}
+
+.telto {
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    padding-bottom: 21px;
   }
 }
 

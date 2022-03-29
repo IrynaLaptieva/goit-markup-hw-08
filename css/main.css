@@ -375,7 +375,6 @@ nav {
 
 .header-contacts__link {
   display: block;
-  padding-top: 21px;
   color: var(--paragraph-text-color);
   font-weight: 500;
   font-size: 12px;
@@ -397,6 +396,18 @@ nav {
 
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .mailto {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .telto {
+    padding-bottom: 21px;
+  }
 }
 
 .menu-open-btn,
@@ -620,11 +631,14 @@ nav {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -15px;
   }
 }
 
-.benefits-list__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .benefits-list__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -731,6 +745,7 @@ nav {
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -15px;
   }
 }
 
@@ -749,6 +764,7 @@ nav {
 @media screen and (min-width: 768px) {
   .team-list__item {
     width: calc(100% / 2 - 30px);
+    margin-bottom: 15px;
   }
 }
 
@@ -848,7 +864,7 @@ nav {
 
 .clients-item {
   width: calc(100% / 2 - 30px);
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1079,14 +1095,15 @@ nav {
   border-color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .online-input {
-    width: 358px;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .online-input {
+    width: 358px;
     margin-bottom: 0;
   }
 }

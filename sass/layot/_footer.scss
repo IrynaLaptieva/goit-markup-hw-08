@@ -203,11 +203,12 @@
     border-color: var(--accent-color);
   }
 
-  @include tel {
-    width: 358px;
+  @include tab {
+    width: 450px;
   }
 
   @include desk {
+    width: 358px;
     margin-bottom: 0;
   }
 }
