@@ -62,9 +62,14 @@
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   margin-top: 0;
   margin-bottom: 10px;
+
+  @include tab {
+    text-align: start;
+  }
 }
 
 .benefits-container__paragraph {

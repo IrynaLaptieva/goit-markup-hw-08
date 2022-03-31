@@ -676,8 +676,15 @@ nav {
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-container__title {
+    text-align: start;
+  }
 }
 
 .benefits-container__paragraph {
@@ -853,7 +860,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: -15px;
 }
 
 @media screen and (max-width: 479px) {
